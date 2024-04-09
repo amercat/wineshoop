@@ -9,6 +9,6 @@ class ContactUsController extends BaseController
 {
     public function index()
     {
-        //
+
     }
 }
