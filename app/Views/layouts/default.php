@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="<?= base_url('assets/css/homecopy.css') ?>" media="all" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.css') ?>" media="all" onload="if(media!='all')media='all'">
-    <link rel="stylesheet" href="<?= base_url('assets/css/js/bootstrap.js') ?>" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="<?= base_url('assets/js/bootstrap.js') ?>" media="all" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="https://wl-apps.yourwebsite.life/social-icons/1.0.24/components/SocialIcons/ssr.css">
 
 

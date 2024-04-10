@@ -6413,5 +6413,5 @@
     </div>
 </div>
 <!--CONTENT_PLACEHOLDER-->
-<link rel="stylesheet" href="<?= base_url('assets/css/js/bootstrap.js') ?>" media="all" onload="if(media!='all')media='all'">
+<link rel="stylesheet" href="<?= base_url('assets/js/bootstrap.js') ?>" media="all" onload="if(media!='all')media='all'">
 

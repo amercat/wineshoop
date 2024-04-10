@@ -6,16 +6,15 @@
 
     <link rel="stylesheet" href="<?= base_url('assets/css/home.css') ?>" media="all" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.css') ?>" media="all" onload="if(media!='all')media='all'">
-    <link rel="stylesheet" href="<?= base_url('assets/css/js/bootstrap.js') ?>" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="<?= base_url('assets/js/bootstrap.js') ?>" media="all" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="https://wl-apps.yourwebsite.life/social-icons/1.0.24/components/SocialIcons/ssr.css">
 
 </head>
 
 <body class="js-focus-visible">
-    <?php
-    $uri = service('uri');
-    ?>
-    <div id="app">
+
+
+<div id="app">
         <div id="page-home" class="page" lang="">
             <div id="portal"></div>
             <div class="w-blocks-group-wrapper blocks-group-wrapper_2QF">
@@ -25,6 +24,8 @@
                         <div class="background_2xT" style="background:#fff" data-role="placeholder"></div>
                     </div>
                     <header class="block-content_1-F" data-block-content-type="header">
+
+
                         <div class="header w-section--header w-section--no-v-padding" data-header="target" data-category="header">
                             <div class="w-hide--sm w-hide--md">
                                 <div class="horizontal-flow-wrapper_g7b background_3lr background background--dark w-state-has-background">
@@ -53,6 +54,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="horizontal-flow__section-inner_2xL">
                                                 <nav class="w-nav w-nav--constructor">
                                                     <ul class="menu_1QC menu--5e9964554562210021499748--3a2eef50-9753-4e39-a805-e592ce9d8c21 w-nav__list menu-with-presets_vQ_ menu-with-presets--horizontal_24B w-nav__list--row" data-component="menu">
@@ -61,7 +63,20 @@
                                                         <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#about&quot;}" href="/#about">Nos Fournisseurs</a></span></li>
                                                         <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#shop&quot;}" href="/#shop">Qui Sommes-Nous</a></span></li>
                                                         <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#contact-form&quot;}" href="/#login">Login</a></span></li>
+                                                        <!-- Ensure that the username is displayed properly in the view -->
+                                                        <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#login&quot;}">
+                                                                    Welcome, <?php if (session()->has('id')) : ?>
+                                                                        <h2 class="text-white">Bienvenue, <?=  service('session') ?></h2>
+                                                                    <?php endif; ?>!<a</span>
+                                                        </li>
+
+
+                                                        <!-- Session -->
+
+
                                                     </ul>
+
+
                                                 </nav>
                                                 <p class="text_1k0 ui-text w-body ui-text--light" data-component="text"><span class="w-text-block" style="display: block;"><br></span></p>
                                                 <div class="social-icons-container_3Jd w-socials">
@@ -108,3 +123,6 @@
                                         <div class="w-grid__item w-grid__item--top grid__item--empty_3zx w-grid__item--empty" data-column-size="5">
                                             <div class="w-grid__item-inner w-grid__item-panel w-text-left w-088754deb0dd8820b733e12d9894218e"></div>
                                         </div>
+                                        <!-- Retrieve and display the name of the logged-in user -->
+
+
