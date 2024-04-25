@@ -20,8 +20,8 @@ class Home extends BaseController
         echo view('layouts/templates/footer');
 
         $user = $userModel->find($auth->id());
-        print_r($user);
-    }
+//        print_r($user);
+}
 
 
 }
