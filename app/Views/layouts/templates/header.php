@@ -62,20 +62,16 @@
                                                         <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#history&quot;}" href="/#history">Nos Coffrets</a></span></li>
                                                         <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#about&quot;}" href="/#about">Nos Fournisseurs</a></span></li>
                                                         <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#shop&quot;}" href="/#shop">Qui Sommes-Nous</a></span></li>
-                                                        <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#contact-form&quot;}" href="/#login">Login</a></span></li>
+                                                        <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#home&quot;}" href="/#home">Login</a></span></li>
+                                                        <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#home&quot;}" href="<?= base_url('logout')?>">Logout</a></span></li>
+
                                                         <!-- Ensure that the username is displayed properly in the view -->
                                                         <li class="menu__item_1eM menu__item--light_UNr w-nav__item" data-menuitem="true"><span class="menu__item-wrapper_YJs" data-state="closed"><a class="menu__link_2K2 w-nav__link" aria-haspopup="false" data-component="hash-link" data-hydrate="{&quot;to&quot;:&quot;#login&quot;}">
-                                                                    Welcome, <?php if (session()->has('id')) : ?>
-                                                                        <h2 class="text-white">Bienvenue, <?=  service('session') ?></h2>
-                                                                    <?php endif; ?>!<a</span>
+
                                                         </li>
-
-
                                                         <!-- Session -->
 
-
                                                     </ul>
-
 
                                                 </nav>
                                                 <p class="text_1k0 ui-text w-body ui-text--light" data-component="text"><span class="w-text-block" style="display: block;"><br></span></p>

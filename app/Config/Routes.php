@@ -7,6 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('nosvins', 'NosvinsController::index'); // Route to the index method of NosvinsController
+$routes->get('contact', 'ContactUsController::index'); // Route to the index method of ContactusController
+
 
 
 
