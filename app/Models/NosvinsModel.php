@@ -49,4 +49,12 @@ class NosvinsModel extends Model
         ->get()
         ->getResultArray();
     }
+
+    public function ProductLookupById($id): array
+    {
+        return $this->db->table('bottle')
+            ->select(['full_name', 'label', 'volume','category_id', 'picture', 'current_price'])
+            ->get($id)
+            ->getResultArray();
+    }
 }

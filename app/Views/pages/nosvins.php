@@ -22,7 +22,7 @@
                                     <?php foreach ($bottle as $bot) : ?>
                                         <div class="product-wrapper_xQU js-product">
                                             <img class="js-preview-img" alt="Pinot Noir" src="<?= $bot['picture']; ?>">
-                                            <p class="ui-subheading w-subheading ui-text--light"><a href="/shop/syrah-copy" class="name_zKO" data-test="name"><?= $bot['full_name'] ? $bot['full_name'] : '' ?></a></p>
+                                            <p class="ui-subheading w-subheading ui-text--light"><a href="/shop/syrah-copy" class="name_zKO" data-test="name"><?= $bot['full_name'] ? : '' ?></a></p>
                                             <div class="price_3dp">
                                                 <p class="ui-subheading w-subheading ui-subheading--light prices_2Yh">
                                                     <span class="price-new_2SJ ui-text--light"><?= $bot['current_price'] ?></span>
