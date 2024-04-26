@@ -10,7 +10,7 @@ $routes->get('/', 'Home::index');
 $routes->get('nosvins', 'NosvinsController::index'); // Route to the index method of NosvinsController
 $routes->get('contact', 'ContactUsController::index'); // Route to the index method of ContactusController
 
-$routes->get('nosvins/(:any)', 'NosvinsController::ProductLookupById/$1');
+$routes->get('nosvins/(:num)', 'NosvinsController::view/$1)');
 
 
 

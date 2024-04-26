@@ -28,7 +28,12 @@
                                                     <span class="price-new_2SJ ui-text--light"><?= $bot['current_price'] ?></span>
                                                 </p>
                                             </div>
-                                            <div class="product-button_3gl"><a class="js-buy-button  button_2W3 ui-button ui-button--primary-dark ui-button--size-md button--font-weight-bold_1Nu" data-test="buy-button" data-component="button"><span class="button__border_1J- ui-button__border"></span><span class="button__inner_2of"><span class="button__content_1_I">Add to cart</span></span></a></div>
+                                            <div class="product-button_3gl">
+                                                <a href="nosvins/<?= $bot['id'] ?>" class="js-buy-button  button_2W3 ui-button ui-button--primary-dark ui-button--size-md button--font-weight-bold_1Nu" data-test="buy-button" data-component="button">
+                                                    <span class="button__border_1J- ui-button__border"></span>
+                                                    <span class="button__inner_2of"><span class="button__content_1_I">Add to cart</span></span>
+                                                </a>
+                                            </div>
 
                                         </div>
                                     <?php endforeach; ?>

@@ -25,8 +25,9 @@ class NosvinsController extends BaseController
             . view('layouts/templates/footer');
     }
 
-    public function ProductLookupById($id):string
+    public function view($id)
     {
+
         // Fetch data from the model
         $data['bottle'] = $this->model->ProductLookupById($id);
 

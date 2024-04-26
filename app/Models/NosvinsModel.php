@@ -12,7 +12,7 @@ class NosvinsModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['full_name', 'label','volume','category_id', 'picture'];
+    protected $allowedFields    = ['full_name', 'label','volume','category_id', 'picture','description'];
 
     protected bool $allowEmptyInserts = false;
 
@@ -45,7 +45,7 @@ class NosvinsModel extends Model
     public function getAll()
     {
         return $this->db->table('bottle')
-        ->select(['full_name', 'label', 'volume','category_id', 'picture', 'current_price'])
+        ->select(['id','full_name', 'label', 'volume','category_id', 'picture', 'current_price', 'description'])
         ->get()
         ->getResultArray();
     }
@@ -53,8 +53,9 @@ class NosvinsModel extends Model
     public function ProductLookupById($id): array
     {
         return $this->db->table('bottle')
-            ->select(['full_name', 'label', 'volume','category_id', 'picture', 'current_price'])
-            ->get($id)
+            ->select(['id', 'full_name', 'label', 'volume','category_id', 'picture', 'current_price','description'])
+            ->where('id', $id)
+            ->get()
             ->getResultArray();
     }
 }
