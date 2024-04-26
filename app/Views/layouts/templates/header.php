@@ -6,7 +6,10 @@
 
     <link rel="stylesheet" href="<?= base_url('assets/css/home.css') ?>" media="all" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.css') ?>" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="<?= base_url('assets/css/catalogue.css') ?>" media="all" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="<?= base_url('assets/js/bootstrap.js') ?>" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="//res2.yourwebsite.life/site/617699e84960f1002e9364c5/core-theme-6025516dace53b00219cf3a6.css" />
+
     <link rel="stylesheet" href="https://wl-apps.yourwebsite.life/social-icons/1.0.24/components/SocialIcons/ssr.css">
 
 </head>
